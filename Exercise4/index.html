@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="main.js"></script>
+		<title>CSS Manipulation</title>
+	</head>
+
+	<body>
+		<div id="lyrics_container">
+			<h1 id="title">Shelter</h1>
+			<div class="stanzas">
+				<p class="lyrics">I could never find the right way to tell you</p>
+				<p class="lyrics">Have you noticed I've been gone?</p>
+				<p class="lyrics">'Cause I left behind the home that you made me</p>
+				<p class="lyrics">But I will carry it along</p>
+				<p class="lyrics">And it's a long way forward, so trust in me</p>
+				<p class="lyrics">I'll give them shelter, like you've done for me</p>
+				<p class="lyrics">And I know, I'm not alone, you'll be watching over us</p>
+				<p class="lyrics">Until you're gone</p>
+			</div>
+
+			<div class="stanzas">
+				<p class="lyrics">When I'm older, I'll be silent beside you</p>
+				<p class="lyrics">I know words won't be enough</p>
+				<p class="lyrics">And they won't need to know the names or our faces</p>
+				<p class="lyrics">But they will carry on for us</p>
+			</div>
+			
+			<div class="stanzas">
+				<p class="lyrics">And it's a long way forward, so trust in me</p>
+				<p class="lyrics">I'll give them shelter, like you've done for me</p>
+				<p class="lyrics">And I know, I'm not alone, you'll be watching over us</p>
+				<p class="lyrics">Until you're gone</p>
+			</div>
+			
+			<div class="stanzas">
+				<p class="lyrics">Oh it's a long way forward, trust in me</p>
+				<p class="lyrics">I'll give them shelter, like you've done for me</p>
+				<p class="lyrics">And I know, I'm not alone, you'll be watching over us</p>
+				<p class="lyrics">Until</p>
+			</div>
+	
+			<p id="credits"><i>– Porter Robinson, Madeon</i></p>
+		</div>
+
+		<div id="text_fields">
+			<!-- border -->
+			<h1 class="desc">CSS Manipulation</h1>
+			<p class="desc">Change the colors of the border and background colors using RGB ranges between 0 and 255. Change the border width using positive integers.</p>
+
+			<div id="border_fields">
+				<p><b>Border:</b></p>
+				<input type="text" id="border_r" placeholder="red">
+				<input type="text" id="border_g" placeholder="green">
+				<input type="text" id="border_b" placeholder="blue">
+				<input type="text" id="border_w" placeholder="width">
+			</div>
+
+			<!-- background -->
+			<div id="background_fields">
+				<p><b>Background:</b></p>
+				<input type="text" id="background_r" placeholder="red">
+				<input type="text" id="background_g" placeholder="green">
+				<input type="text" id="background_b" placeholder="blue">
+			</div>
+
+			<p id="commit" onclick="commit()">Commit!</p>
+		</div>
+	</body>
+</html>
