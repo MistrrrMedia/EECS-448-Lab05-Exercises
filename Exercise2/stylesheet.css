@@ -1,0 +1,67 @@
+html
+{
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	margin: 0;
+	background-color: black;
+	height: 100%;
+	justify-content: center;
+	display: flex;
+	color: white;
+	font-weight: 600;
+	
+	/* prevent user from selecting text/images when rapidly clicking prevoius/next" */
+	-webkit-user-select: none; /* safari */
+	 -khtml-user-select: none; /* konqueror */
+	   -moz-user-select: none; /* firefox */
+		-ms-user-select: none; /* internet explorer, eddge */
+		   -user-select: none; /* chrome, opera */
+}
+
+body
+{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+    padding: 0;
+}
+
+#container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#previous
+{
+	width: 70px;
+	text-align: right;
+	padding: 30px;
+	font-size: 20px;
+}
+
+#next
+{
+	width: 70px;
+	text-align: left;
+	padding: 30px;
+	font-size: 20px;
+}
+
+img
+{
+	/** regardless of dimensions, each image will have a fixed width and height of 750px
+		transparent images may have alpha borders that do not "appear" 600x600; however,
+		the actual images are. **/
+	width: 600px; 
+	height: 600px;
+	display: none;
+	border: solid;
+	border-color: black;
+}
+
+img:hover
+{
+	border-color: rgb(30,30,30);
+}
